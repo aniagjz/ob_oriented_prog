@@ -46,9 +46,8 @@ class Gene {
         void getEnd(){return end;}
         void getStrand(){ return strand;}
         //describe
-        cout << id<< << name << <<( << chrom<<: << start << - << end << , << strand <<) << endl;     
+        void describe(){cout << id<< << name << <<( << chrom<<: << start << - << end << , << strand <<) << endl;}
 }
-
 int main(){
-    
+
 }
