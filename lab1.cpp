@@ -20,7 +20,7 @@ class Protein{
         string getName(){return name;}
         string getSeq(){return sequence;}
         //describe
-       void describe(){cout << "print describe:" << id <<" "<< name <<" "<< sequence << endl;} 
+       void describe(){cout << "protein" << id <<" "<< name <<" "<< sequence << endl;} 
 };
 
 class Gene {
@@ -47,7 +47,7 @@ class Gene {
         int getEnd(){return end;}
         char getStrand(){ return strand;}
         //describe
-        void describe(){cout << id<<" "<< name << "( "<< chrom<<":"<< start << "-" << end << "," << strand <<")" << endl;}
+        void describe(){cout <<"Gene"<<" "<< id<<" "<< name << "( "<< chrom<<":"<< start << "-" << end << "," << strand <<")" << endl;}
 };
 
 int main(){
@@ -59,6 +59,17 @@ int main(){
     p1.setSeq("MNAAATARATLL");
 
     p1.describe();
+
+    Gene g1;
+
+    g1.setId("ENSG1234");
+    g1.setName("BRCA1");
+    g1.setChrom("chrom1");
+    g1.setStart(9162639);
+    g1.setEnd(43792651);
+    g1.setStrand('+');
+
+    g1.describe();
 
     return 0;
 }
