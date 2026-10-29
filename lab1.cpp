@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <cstring>
 
 using namespace std;
 
@@ -20,7 +20,9 @@ class Protein{
         string getName(){return name;}
         string getSeq(){return sequence;}
         //describe
-       void describe(){cout << "protein" << id <<" "<< name <<" "<< sequence << endl;} 
+        void describe(){cout << "protein" <<" "<< id <<" "<< name <<" "<< sequence << endl;} 
+
+        //int length(string newSeq){ return s.length(newSeq);}
 };
 
 class Gene {
@@ -63,7 +65,9 @@ int main(){
     p2.setSeq("MNTTAACUUA");
 
     p1.describe();
+    cout <<"length"<<" "<< p1.getId().length() <<endl;
     p2.describe();
+    cout <<"length"<<" "<< p2.getId().length() <<endl;
 
     Gene g1,g2;
 
@@ -82,6 +86,8 @@ int main(){
     g2.setStrand('-');
 
     g1.describe();
+    cout <<"length"<<" "<< g1.getId().length() <<endl;
     g2.describe();
+    cout <<"length"<<" "<< g2.getId().length() <<endl;
     return 0;
 }
