@@ -52,15 +52,20 @@ class Gene {
 
 int main(){
 
-    Protein p1;
+    Protein p1,p2;
 
     p1.setId("ENSP1234");
     p1.setName("PTEN");
     p1.setSeq("MNAAATARATLL");
 
-    p1.describe();
+    p2.setId("ANIA090607");
+    p2.setName("GJZ");
+    p2.setSeq("MNTTAACUUA");
 
-    Gene g1;
+    p1.describe();
+    p2.describe();
+
+    Gene g1,g2;
 
     g1.setId("ENSG1234");
     g1.setName("BRCA1");
@@ -69,7 +74,14 @@ int main(){
     g1.setEnd(43792651);
     g1.setStrand('+');
 
-    g1.describe();
+    g2.setId("BGSS7253");
+    g1.setName("RALM7");
+    g2.setChrom("chrom2");
+    g2.setStart(835729);
+    g2.setEnd(6723893);
+    g2.setStrand('-');
 
+    g1.describe();
+    g2.describe();
     return 0;
 }
