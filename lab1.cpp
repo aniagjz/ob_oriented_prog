@@ -23,6 +23,7 @@ class Protein{
         void describe(){cout << "protein" <<" "<< id <<" "<< name <<" "<< sequence << endl;} 
 
         //int length(string newSeq){ return s.length(newSeq);}
+        
 };
 
 class Gene {
