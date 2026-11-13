@@ -3,9 +3,6 @@
 #include <string>
 using namespace std;
 
-// ==========================
-// Κλάση Protein
-// ==========================
 class Protein {
 private:
     string id;
@@ -40,9 +37,6 @@ public:
     }
 };
 
-// ==========================
-// Κλάση Gene
-// ==========================
 class Gene {
 private:
     const string organism;  
@@ -85,6 +79,18 @@ public:
     // Getter για οργανισμό (const member)
     const string& getOrganism() const {
         return organism;
+    }
+};
+
+class Sequence{
+
+    private:
+        string type;
+        string seq;
+    public:
+        void describe(){cout << type << " "<< seq<<endl};
+        int length() const {
+        return sequence.size();
     }
 };
 
